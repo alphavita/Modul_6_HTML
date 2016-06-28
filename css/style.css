@@ -208,14 +208,14 @@ border-radius: 10px;
 /*LEFTCOL*/
 .left_col {
 	float: left;
-	width: 190px;
+	width: 180px;margin-right: 10px;
 	font-family: "Lucida Sans Unicode";
 }
 .left_col h2,
 .right_col h2 {
 	border: 1px solid #949fa4;
 	color: #114165;
-	font-size: 13px;
+	font-size: 12px;
 	border-radius: 13px;
 	padding: 2px 8px 2px 2px;
 	vertical-align: middle;
@@ -260,7 +260,10 @@ box-shadow:         1px 1px 5px 0px rgba(0, 0, 0, 0.55);
 /*CENTER_COL*/
 .center_col {
 	float: left;
-	width: 520px;
+	width: 500px;
+	padding-left: 20px;
+	padding-top: 17px;
+	border-radius: 3px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4e7e8+0,93a7b0+100 */
 background: #e4e7e8; /* Old browsers */
 background: -moz-linear-gradient(top,  #e4e7e8 0%, #93a7b0 100%); /* FF3.6-15 */
@@ -272,7 +275,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 /*RIGHT_COL*/
 .right_col {
 	float: left;
-	width: 190px;
+	width: 180px;
+	margin-left: 10px;
+
 }
 .right_col button {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d6081+0,0c3357+100 */
@@ -290,11 +295,50 @@ font-family: arial;
 padding: 5px;
 margin-left: 23px;
 }
+
+
+/*ITEM*/
 .item {
 	float: left;
 	width: 137px;
+	margin-right: 28px;
+	margin-bottom: 20px;
+}
+.item_title {
+	color: #206988;
+	font-size: 14px;
+	font-family: "Licida Sans Unicode";
+	text-align: center;
+}
+.item figcaption {
+	color: #1f2528;
+	font-size: 13px;
+	font-family: "Lucida Sans Unicode";
+	text-align: center;
+	padding-bottom: 2px;
+}
+.item_img {
+	background-color: #fff;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	border-radius: 9px;
+	border: 1px solid #a7b0b3;
 }
 
+.item_img img {
+	display:block;
+	margin:0 auto;
+}
+.item_prise {
+	color: #114165;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	display:block;
+	text-align: center;
+	margin-top: 4px;
+
+}
 
 
 
