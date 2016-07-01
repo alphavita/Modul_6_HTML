@@ -6,7 +6,7 @@ body {
     src: url("../fonts/lucida-sans-unicode.ttf") format('truetype');
 }
 .wraper {
-	width: 908px;
+	width: 910px;
 	background-color: #fff;
 	margin: 0 auto;
 	padding-top: 18px;
@@ -48,6 +48,8 @@ body {
 	font-family: arial;
 	color: #5e696d;
 	vertical-align: middle;
+	top: 130px;
+left: 200px;
 }
 .autores {
 	float: left;
@@ -73,13 +75,13 @@ box-shadow: 2px 2px 4px 2px rgba(207,207,207,1);
 .autores input {
 	border-style: none;
 	padding: 0;
-	font-size: 10,91px;
+	font-size: 10px;
 	color: #97a2a6;
 	padding-left: 4px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	vertical-align: middle;
-	height: 11px;
+	line-height: 11px;
 	/*margin-right: 7px;*/
 	width: 108px;
 }
@@ -126,6 +128,10 @@ form>a {
 	font-family: "Lucida Sans Unicode";
 	margin-left: 19px;
 }
+.baner img {
+	width: 910px;
+}
+
 .navy {
 	float: left;
 	display: block;
@@ -133,6 +139,7 @@ form>a {
 	border: 1px solid gray;
 	border-radius: 10px;
 	height: 20px;
+	/*background-color: #000;*/
 }
 .navy img {
 	padding-left: 8px;
@@ -142,7 +149,23 @@ form>a {
 }
 /*NAV*/
 nav {
-	background-color: #0a0b0c;
+	/* IE10+ */
+background-image: -ms-linear-gradient(top, #505860 0%, #3A4046 11%, #2A2E32 15%, #020202 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top, #505860 0%, #3A4046 11%, #2A2E32 15%, #020202 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(top, #505860 0%, #3A4046 11%, #2A2E32 15%, #020202 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #505860), color-stop(11, #3A4046), color-stop(15, #2A2E32), color-stop(100, #020202));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top, #505860 0%, #3A4046 11%, #2A2E32 15%, #020202 100%);
+
+/* W3C Markup */
+background-image: linear-gradient(to bottom, #505860 0%, #3A4046 11%, #2A2E32 15%, #020202 100%);
 	border-radius: 4px;
 	padding-left: 127px;
 	padding-top: 3px;
@@ -162,32 +185,51 @@ nav ul li a{
 	color: #b1bcc0;
 	font-size: 13px;
 	font-family: "Lucida Sans Unicode";
-	padding-left: 17px;
-	padding-right: 17px;
+	padding-left: 14px;
+	padding-right: 14px;
 	line-height: 28px;
 	margin-bottom: 6px;
+}
+nav ul li a:first-child {
+	padding-left: 17px;
+	padding-right: 17px;
 }
 nav ul li {
 	float: left;
 }nav ul li a:hover {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1c5e7e+0,3f4c55+100 */
-background: #1c5e7e; /* Old browsers */
-background: -moz-linear-gradient(top,  #1c5e7e 0%, #3f4c55 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #1c5e7e 0%,#3f4c55 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #1c5e7e 0%,#3f4c55 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c5e7e', endColorstr='#3f4c55',GradientType=0 ); /* IE6-9 */
+	/* IE10+ */
+background-image: -ms-linear-gradient(top, #1f6787 0%, #175173 42%, #0D3458 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top, #1f6787 0%, #175173 42%, #0D3458 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(top, #1f6787 0%, #175173 42%, #0D3458 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1f6787), color-stop(42, #175173), color-stop(100, #0D3458));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top, #1f6787 0%, #175173 42%, #0D3458 100%);
+
+/* W3C Markup */
+background-image: linear-gradient(to bottom, #1f6787 0%, #175173 42%, #0D3458 100%);
 border-radius: 10px;
 }
-.basket {margin-top: 4px;
+.basket {
+	margin-top: 4px;
 	float: left;
-	width: 263px;
+/*	width: 263px;*/
+	margin-left: 51px;
 
 }
+/*
 .basket img {
 	margin-left: 48px;
 	vertical-align: middle;
 	margin-top: 4px;
 }
+*/
 .basket span:nth-child(odd) {
 	color: #0d5a8f;
 	font-size: 12px;
@@ -195,7 +237,7 @@ border-radius: 10px;
 }
 .basket span:nth-child(even) {
 	color: #929b9f;
-	font-size: 11px;
+	font-size: 12px;
 	font-family: arial;
 }
 .basket span:nth-child(4) {
@@ -210,6 +252,9 @@ border-radius: 10px;
 .left_col {
 	float: left;
 	width: 180px;margin-right: 10px;
+	font-family: "Lucida Sans Unicode";
+}
+.right_col {
 	font-family: "Lucida Sans Unicode";
 }
 .left_col h2,
@@ -242,14 +287,24 @@ box-shadow:         1px 1px 5px 0px rgba(0, 0, 0, 0.55);
 }
 .title_litl {
 	width: 140px;
-	margin-bottom: 7px;
+	margin-bottom: 4px;
+	line-height: 11px;
+	vertical-align: center;
+}
+.title_litl span {
+	display: inline-block;
+	margin-top: 8px;
 }
 .filter label a{
 	display: block;
 	text-decoration: none;
 	color: #465961;
 	font-size: 12px;
-	margin-bottom: 14px;
+	margin-bottom: 7px;margin-left: 32px;
+}
+.filter input {
+margin-left: 1px;
+margin-right: -1px;
 }
 .filter input:checked + span,
 .filter label a:hover {
